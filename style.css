@@ -1,0 +1,248 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: transparent;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  position: relative;
+}
+
+form {
+  padding: 80px 30px 100px 30px;
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 3px #d9d9d9, -3px -3px 1px #f2f2f2;
+  background-color: #fff;
+}
+
+form .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+form .heading h1 {
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+}
+
+form .heading p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+form .input-box {
+  border: 2px solid blue;
+  padding: 5px 20px;
+  width: 90%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 50px;
+  background-color: #fff;
+}
+
+form .input-box .form-label {
+  color: blue;
+  position: absolute;
+  left: 15px;
+  top: -13px;
+  background-color: #fff;
+  padding: 0 10px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+form .input-box .form-input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-top: 10px;
+}
+
+form .input-box input[type="text"] {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+form .btn {
+  background-color: blue;
+  color: #f2f2f2;
+  width: 90%;
+  padding: 15px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 7px;
+}
+
+.visit-links {
+  width: auto;
+  height: 50px;
+  background-color: blue;
+  color: #f2f2f2;
+  padding: 10px 30px;
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  gap: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: inherit;
+    padding: 0 5%;
+    height: 100vh;
+    width: 100%;
+  }
+
+  form {
+    border: none;
+    padding: 50px 5% 50px 5%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  form .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  form .heading h1 {
+    font-size: 25px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+  }
+
+  form .heading p {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  form .input-box {
+    border: 2px solid blue;
+    padding: 5px 20px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 50px;
+    background-color: #fff;
+  }
+
+  form .input-box .form-label {
+    color: blue;
+    position: absolute;
+    left: 13px;
+    top: -12px;
+    background-color: #fff;
+    padding: 0 5px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  form .input-box .form-input {
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-top: 10px;
+    font-size: 13px;
+  }
+
+  form .input-box input[type="text"] {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  form .btn {
+    background-color: blue;
+    color: #f2f2f2;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+  }
+
+  .visit-links {
+    width: auto;
+    height: 50px;
+    background-color: blue;
+    color: #f2f2f2;
+    padding: 5px 20px;
+    position: absolute;
+    bottom: 5%;
+    right: 50%;
+    transform: translateX(50%);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    gap: 5px;
+  }
+}

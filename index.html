@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <title>Bagikan gambar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <form id="form">
+      <div class="heading">
+        <h1>UPPLOTHER GAMBAR</h1>
+        <p>Unggah gambar anda ke google drive</p>
+      </div>
+      <div class="input-box">
+        <label for="uploadfile" class="form-label">Upload file</label>
+        <input type="file" name="file" id="uploadfile" class="form-input" />
+      </div>
+      <div class="input-box">
+        <label for="" class="form-label">Masukkan nama file</label>
+        <input type="text" name="filename" id="filename" class="form-input" />
+      </div>
+      <button type="submit" class="btn">Kirim</button>
+    </form>
+
+    <a
+      href="https://drive.google.com/drive/folders/1BVOwn4nyG8d7Y4WDlfaMhMQtGzhPsg7i?usp=drive_link">
+      <div class="visit-links" onclick="openFolder">
+        <i class="bx bxs-folder" style="color: #fff; font-size: 20px"></i>
+        <p>Buka Folder</p>
+      </div>
+    </a>
+
+    <script src="main.js"></script>
+  </body>
+</html>
