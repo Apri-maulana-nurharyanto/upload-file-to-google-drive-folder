@@ -49,6 +49,7 @@ form .heading h1 {
 form .heading p {
   font-size: 15px;
   font-weight: 500;
+  color: blue;
 }
 
 form .input-box {
