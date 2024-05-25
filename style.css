@@ -71,12 +71,12 @@ form .input-box {
 form .input-box .form-label {
   color: blue;
   position: absolute;
-  left: 15px;
+  left: 20px;
   top: -13px;
   background-color: #fff;
   padding: 0 10px;
-  font-weight: 500;
-  font-size: 15px;
+  font-weight: 700;
+  font-size: 16px;
 }
 
 form .input-box .form-input {
@@ -99,6 +99,7 @@ form .input-box input[type="text"] {
   font-size: 18px;
   font-weight: 500;
   cursor: text;
+  transform: translateY(-10%);
 }
 
 form .input-box input[type=file] {
