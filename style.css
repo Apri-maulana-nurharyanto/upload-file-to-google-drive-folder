@@ -137,8 +137,8 @@ form  .btn {
 /* BATAS */
 
 .popup {
-  width: auto;
-  height: auto;
+  width: 200px;
+  height: 150px;
   background-color: #fff;
   padding: 30px 50px;
   box-shadow: -3px -3px 2px #f2f2f2, 5px 5px 3px #d9d9d9;
@@ -171,6 +171,7 @@ form  .btn {
   cursor: pointer;
   font-size: 18px;
   font-weight: 600;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 767px) {
