@@ -5,7 +5,7 @@
 }
 
 *::selection {
-  background-color: rgba(0, 0, 0, .1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -48,11 +48,13 @@ form .heading h1 {
   font-size: 30px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 700;
+  color: blue;
 }
 
 form .heading p {
   font-size: 15px;
   font-weight: 500;
+  color: black;
 }
 
 form .input-box {
@@ -71,10 +73,10 @@ form .input-box {
 form .input-box .form-label {
   color: blue;
   position: absolute;
-  left: 20px;
+  left: 15px;
   top: -13px;
   background-color: #fff;
-  padding: 0 15px;
+  padding: 0 10px;
   font-weight: 700;
   font-size: 16px;
 }
@@ -102,12 +104,12 @@ form .input-box input[type="text"] {
   transform: translateY(-10%);
 }
 
-form .input-box input[type=file] {
+form .input-box input[type="file"] {
   height: 100%;
   border: none;
 }
 
-form  .btn {
+form .btn {
   background-color: blue;
   color: #f2f2f2;
   width: 70%;
@@ -137,8 +139,10 @@ form  .btn {
 /* BATAS */
 
 .popup {
-  width: 200px;
-  height: 150px;
+  min-width: 500px;
+  width: auto;
+  max-width: 700px;
+  height: auto;
   background-color: #fff;
   padding: 30px 50px;
   box-shadow: -3px -3px 2px #f2f2f2, 5px 5px 3px #d9d9d9;
@@ -151,23 +155,22 @@ form  .btn {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
-
+  gap: 20px;
 }
 
 .popup p {
   font-weight: 700;
   font-size: 30px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
 }
 
 .popup button {
-  padding: 20px 200px;
+  padding: 15px 50px;
   background-color: blue;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 7px;
   cursor: pointer;
   font-size: 18px;
   font-weight: 600;
@@ -264,7 +267,6 @@ form  .btn {
   form .input-box input[type="text"] {
     font-size: 15px;
     font-weight: 500;
-    cursor: text;
     transform: translateY(-15%);
   }
 
@@ -272,14 +274,13 @@ form  .btn {
     background-color: blue;
     color: #f2f2f2;
     width: 100%;
-    padding: 20px 0;
+    padding: 15px 0;
     border: none;
     outline: none;
     cursor: pointer;
     font-size: 15px;
     font-weight: 700;
     border-radius: 5px;
-    min-height: 50px;
   }
 
   .visit-links {
@@ -299,11 +300,13 @@ form  .btn {
   }
 
   .popup {
+    min-width: 100px;
     width: 200px;
+    max-width: 250px;
     height: auto;
     background-color: #fff;
-    padding: 15px 20px;
-    box-shadow: -2px -2px 1px #f2f2f2, 4px 4px 2px #d9d9d9;
+    padding: 20px 5%;
+    box-shadow: -3px -3px 2px #f2f2f2, 5px 5px 3px #d9d9d9;
     border-radius: 7px;
     z-index: 5;
     position: absolute;
@@ -313,26 +316,25 @@ form  .btn {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-  
+    gap: 5px;
   }
   
   .popup p {
-    font-weight: 600;
-    font-size: 18px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
   }
   
   .popup button {
-    padding: 10px 30px;
-    width: 100%;
+    padding: 15px 50px;
     background-color: blue;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 7px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 600;
+    margin-top: 10px;
   }
 }
